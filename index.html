@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PixGen Studio | Interactive 3D Agency Portfolio</title>
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="PixGen Studio is a premium 3D digital agency helping businesses scale through custom AI agents, Meta Ads, Google Ads, and high-converting web designs.">
+  <meta name="keywords" content="3D web design, AI integration, AI agents, Meta Ads, Google Ads, digital marketing, lead generation">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+
+</head>
+<body>
+  <!-- Futuristic Background Glow Orbs -->
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+  <div class="bg-glow-orb orb-3"></div>
+
+  <!-- Custom Cursor -->
+  <div class="custom-cursor" id="custom-cursor"></div>
+  <div class="custom-cursor-glow" id="custom-cursor-glow"></div>
+
+  <!-- Background Grid Lines Decorator -->
+  <div class="bg-grid-lines">
+    <div class="grid-line vertical" style="left: 25%;"></div>
+    <div class="grid-line vertical" style="left: 50%;"></div>
+    <div class="grid-line vertical" style="left: 75%;"></div>
+    <div class="grid-line horizontal" style="top: 33%;"></div>
+    <div class="grid-line horizontal" style="top: 66%;"></div>
+    
+    <!-- Pulsing Intersection Nodes -->
+    <div class="grid-intersection-node" style="left: 25%; top: 33%;"></div>
+    <div class="grid-intersection-node" style="left: 50%; top: 66%;"></div>
+    <div class="grid-intersection-node" style="left: 75%; top: 33%;"></div>
+    <div class="grid-intersection-node" style="left: 50%; top: 33%;"></div>
+    <div class="grid-intersection-node" style="left: 25%; top: 66%;"></div>
+    <div class="grid-intersection-node" style="left: 75%; top: 66%;"></div>
+  </div>
+
+  <!-- Global Header / Navigation -->
+  <header class="main-header">
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="PixGen Studio Logo" class="logo-img">
+      <div class="logo-text-wrapper">
+        <span class="logo-text"><span class="logo-accent">PIXGEN</span> <span class="logo-sub">STUDIO</span></span>
+        <span class="logo-tagline">Content &bull; Consistency &bull; Growth</span>
+      </div>
+    </div>
+    <nav class="nav-links">
+      <a href="#hero" class="nav-link active" id="nav-hero-link">Home</a>
+      <a href="#services" class="nav-link" id="nav-services-link">Services</a>
+      <a href="#portfolio" class="nav-link" id="nav-portfolio-link">Showroom</a>
+      <a href="#roi-calculator" class="nav-link" id="nav-roi-link">ROI Engine</a>
+      <a href="#contact" class="nav-link" id="nav-contact-link">Get Started</a>
+    </nav>
+    <div class="header-cta">
+      <a href="https://wa.me/918308711019?text=Hello%20PixGen%20Studio,%20I'd%20like%20to%20book%20a%20Growth%20Audit." class="btn btn-green-glow" target="_blank" style="margin-right: 0.75rem; display: inline-flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; padding: 0.6rem 1.4rem;">
+        <i data-lucide="message-circle" style="width:14px; height:14px;"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+      <a href="#contact" class="btn btn-primary">Request Audit</a>
+      <button class="mobile-menu-toggle" id="mobile-menu-btn" aria-label="Toggle Mobile Menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu Fullscreen Overlay -->
+  <div class="mobile-menu-overlay" id="mobile-menu-overlay">
+    <nav class="mobile-nav-links">
+      <a href="#hero" class="mobile-nav-link">Home</a>
+      <a href="#services" class="mobile-nav-link">Services</a>
+      <a href="#portfolio" class="mobile-nav-link">Showroom</a>
+      <a href="#roi-calculator" class="mobile-nav-link">ROI Engine</a>
+      <a href="#contact" class="mobile-nav-link">Get Started</a>
+      <a href="https://wa.me/918308711019?text=Hello%20PixGen%20Studio,%20I'd%20like%20to%20book%20a%20Growth%20Audit." class="btn btn-green-glow" target="_blank" style="margin-top: 2rem; width: 100%; max-width: 280px; display: inline-flex; align-items: center; gap: 0.5rem; justify-content: center; padding: 0.85rem 1.5rem;">
+        <i data-lucide="message-circle"></i>
+        <span>Chat on WhatsApp</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Details Backdrop Overlay -->
+  <div class="details-backdrop" id="details-backdrop"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
+    
+    <!-- Hero Section -->
+    <section id="hero" class="section hero-section">
+      <!-- High-Tech Margin Decorators -->
+      <div class="tech-vertical-scale">
+        <span>01</span>
+        <span>02</span>
+        <span>03</span>
+        <span>04</span>
+        <div class="scale-bar"></div>
+      </div>
+      
+      <div class="tech-coordinate-tracker">
+        <span>SYS::PXG_ACTIVE</span>
+        <span>COORD: 18.52 / 73.85</span>
+        <span>PING: 14ms</span>
+      </div>
+
+      <div class="hero-content">
+        <div class="badge neon-text" id="hero-badge">Verified Performance Marketing & Web Agency</div>
+        <h1 class="hero-title" id="hero-title-element">
+          SCALING ACQUISITION THROUGH<br>
+          <span class="gradient-text-blue">PERFORMANCE ADS</span> &<br>
+          <span class="gradient-text-purple">HIGH-SPEED DESIGN</span>
+        </h1>
+        <p class="hero-subtitle" id="hero-subtitle-element">
+          We engineer high-converting Meta & Google Ad campaigns paired with custom high-speed websites. We don't just buy traffic—we build client-exclusive customer acquisition engines that guarantee consistent growth.
+        </p>
+        
+        <!-- Hero Stats Strip -->
+        <div class="hero-stats-strip">
+          <div class="hero-stat-box">
+            <span class="hero-stat-num">₹4.8Cr+</span>
+            <span class="hero-stat-lbl">Managed Ad Spend</span>
+          </div>
+          <div class="hero-stat-box">
+            <span class="hero-stat-num">5.8x+</span>
+            <span class="hero-stat-lbl">Average Ad ROAS</span>
+          </div>
+          <div class="hero-stat-box">
+            <span class="hero-stat-num">15K+</span>
+            <span class="hero-stat-lbl">Leads Generated</span>
+          </div>
+        </div>
+
+        <div class="hero-actions" id="hero-actions-container">
+          <a href="https://wa.me/918308711019?text=Hello%20PixGen%20Studio,%20I'd%20like%20to%20book%20a%20Growth%20Audit." class="btn btn-green-glow" target="_blank">
+            <i data-lucide="message-circle"></i>
+            <span>Chat on WhatsApp</span>
+          </a>
+          <a href="#portfolio" class="btn btn-secondary" id="btn-enter-showroom">
+            <span class="btn-text">Explore Showroom</span>
+            <i data-lucide="compass" class="icon-pulse"></i>
+          </a>
+          <a href="#roi-calculator" class="btn btn-outline">
+            <span>Calculate ROI</span>
+            <i data-lucide="calculator"></i>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Mouse scroll indicator -->
+      <div class="scroll-down-indicator">
+        <span class="mouse-scroll">
+          <span class="mouse-wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section services-section">
+      <div class="section-header">
+        <span class="tech-tag">[ SECTION::ACQUISITION_CAPABILITIES ]</span>
+        <h2 class="section-title">ENGINEERED FOR SCALING</h2>
+        <p class="section-subtitle">We don't just run ads or build sites. We deploy complete autonomous customer-acquisition ecosystems.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Service Card 1 -->
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrapper cyan-glow">
+            <i data-lucide="target" class="service-icon"></i>
+          </div>
+          <h3 class="service-card-title">Performance Marketing</h3>
+          <p class="service-card-description">
+            Scale your client acquisition with data-driven Meta and Google Ad funnels engineered to capture intent, optimize CPA, and maximize return on ad spend (ROAS).
+          </p>
+          <ul class="service-bullets">
+            <li><i data-lucide="check" class="bullet-check"></i> Meta & Google Ads Scaling</li>
+            <li><i data-lucide="check" class="bullet-check"></i> Audience Funnel Optimization</li>
+            <li><i data-lucide="check" class="bullet-check"></i> Real-time Dashboard Analytics</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrapper blue-glow">
+            <i data-lucide="code" class="service-icon"></i>
+          </div>
+          <h3 class="service-card-title">Website Development</h3>
+          <p class="service-card-description">
+            Bespoke interactive landing pages, e-commerce stores, and 3D websites engineered for sub-second speeds, visual perfection, and peak conversion rates.
+          </p>
+          <ul class="service-bullets">
+            <li><i data-lucide="check" class="bullet-check"></i> WebGL & 3D Interactive Design</li>
+            <li><i data-lucide="check" class="bullet-check"></i> Conversion Rate Optimization (CRO)</li>
+            <li><i data-lucide="check" class="bullet-check"></i> Lightweight, Sub-Second Speeds</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="service-card" data-tilt>
+          <div class="service-icon-wrapper purple-glow">
+            <i data-lucide="video" class="service-icon"></i>
+          </div>
+          <h3 class="service-card-title">Content & Social Media</h3>
+          <p class="service-card-description">
+            Capture attention and build organic brand loyalty with high-converting video hooks, custom social media designs, ad creatives, and structured social posting.
+          </p>
+          <ul class="service-bullets">
+            <li><i data-lucide="check" class="bullet-check"></i> Direct-Response Video Hooks & Reels</li>
+            <li><i data-lucide="check" class="bullet-check"></i> Organic Social Media Strategy</li>
+            <li><i data-lucide="check" class="bullet-check"></i> Brand Aesthetics & Design Consistency</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Studio Impact Section -->
+    <section id="studio-impact" class="section impact-section">
+      <div class="section-header">
+        <span class="tech-tag">[ DATABASE::PERFORMANCE_BENCHMARKS ]</span>
+        <h2 class="section-title">THE GROWTH METRICS BENCHMARK</h2>
+        <p class="section-subtitle">A cumulative snapshot of the bottom-line metrics and direct goals we achieve across our portfolio.</p>
+      </div>
+
+      <div class="impact-grid">
+        <div class="impact-card">
+          <span class="impact-num">₹24.8M+</span>
+          <span class="impact-label">Net Sales Revenue Generated</span>
+          <p class="impact-desc">Direct client revenue driven via Google shopping feeds, search campaigns, and advantage catalog delivery.</p>
+        </div>
+        <div class="impact-card">
+          <span class="impact-num">98.4%</span>
+          <span class="impact-label">Average Speed Performance Score</span>
+          <p class="impact-desc">High-performance coding practices and responsive layouts that yield sub-second speeds and lower bounce rates.</p>
+        </div>
+        <div class="impact-card">
+          <span class="impact-num">-36%</span>
+          <span class="impact-label">Average CPA Reduction</span>
+          <p class="impact-desc">Optimizing click-through paths, creative ad hooks, and landing page layouts to drastically reduce lead acquisition costs.</p>
+        </div>
+        <div class="impact-card">
+          <span class="impact-num">100%</span>
+          <span class="impact-label">Performance Guarantee</span>
+          <p class="impact-desc">We target buying-intent keywords and high-converting audiences to secure positive ROAS scaling from Month 1.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Futuristic Quantum HUD Showcase Section -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="section-header">
+        <span class="tech-tag">[ SYSTEM::QUANTUM_SHOWCASE_MODULE ]</span>
+        <h2 class="section-title">QUANTUM ACQUISITION CONSOLE</h2>
+        <p class="section-subtitle">Immersive real-time telemetry. Select a secure client node below to initialize data diagnostics, decrypt ad accounts, and audit performance graphs.</p>
+      </div>
+
+      <!-- Quantum HUD Console Grid Wrapper -->
+      <div class="hud-console-container" id="hud-console-container">
+        
+        <!-- Command Dock (Left Selector Panel) -->
+        <div class="hud-command-dock">
+          <div class="hud-dock-header">
+            <span class="hud-dock-title"><i data-lucide="terminal"></i> NODES_DOCK</span>
+            <span class="hud-status-badge online"><span class="hud-status-dot pulse-green"></span> ONLINE</span>
+          </div>
+          <div class="hud-dock-buttons" id="hud-dock-buttons">
+            <!-- Buttons dynamically generated here -->
+          </div>
+        </div>
+
+        <!-- Telemetry HUD Monitor (Right Dashboard Panel) -->
+        <div class="hud-monitor-panel">
+          
+          <!-- Terminal Diagnostic Screen Header -->
+          <div class="hud-monitor-header">
+            <div class="hud-monitor-tabs">
+              <span class="monitor-tab active"><i data-lucide="cpu"></i> TELEMETRY_SCREEN</span>
+            </div>
+            <div class="hud-monitor-coordinates">
+              <span>SYS_INIT: OK</span>
+              <span>SECURE_LINK: ACTIVE</span>
+            </div>
+          </div>
+
+          <div class="hud-monitor-body">
+            
+            <!-- Typewriter Terminal Log View -->
+            <div class="hud-terminal-log-wrapper">
+              <div class="hud-terminal-log-header">
+                <span>DIAGNOSTIC_LOGGER</span>
+                <span class="hud-terminal-id">ID: PXG-SYS-99X</span>
+              </div>
+              <div class="hud-terminal-log-content" id="hud-terminal-log">
+                <!-- Autotyping logs appear here -->
+              </div>
+            </div>
+
+            <!-- Main Telemetry Content: Metrics & Neon Chart & Decrypted Viewport -->
+            <div class="hud-telemetry-content">
+              
+              <!-- Metrics Panel -->
+              <div class="hud-metrics-panel">
+                <div class="hud-metric-card" id="hud-metric-1">
+                  <span class="hud-metric-lbl">METRIC_1</span>
+                  <span class="hud-metric-val gradient-text-blue" id="hud-metric-val-1">0.00</span>
+                </div>
+                <div class="hud-metric-card" id="hud-metric-2">
+                  <span class="hud-metric-lbl">METRIC_2</span>
+                  <span class="hud-metric-val gradient-text-purple" id="hud-metric-val-2">0.00</span>
+                </div>
+                <div class="hud-metric-card" id="hud-metric-3">
+                  <span class="hud-metric-lbl">METRIC_3</span>
+                  <span class="hud-metric-val" id="hud-metric-val-3">0.00</span>
+                </div>
+              </div>
+
+              <!-- Interactive Display Area (Neon Graph + Decrypted Viewport stacked) -->
+              <div class="hud-display-grid">
+                
+                <!-- Neon Growth Chart -->
+                <div class="hud-chart-card">
+                  <div class="card-tech-header">
+                    <span>GROWTH_VECTOR_V4</span>
+                    <span>TYPE: LINE_DIAG</span>
+                  </div>
+                  <div class="hud-chart-wrapper">
+                    <canvas id="hud-growth-chart"></canvas>
+                  </div>
+                </div>
+
+                <!-- Decrypted Viewport (Dashboard Crop) -->
+                <div class="hud-screenshot-card">
+                  <div class="card-tech-header">
+                    <span>DECRYPTED_VIEWPORT</span>
+                    <span id="hud-crop-coords">X: -48 / Y: -42</span>
+                  </div>
+                  <div class="hud-screenshot-wrapper">
+                    <div class="hud-screenshot-overlay-scanlines"></div>
+                    <div class="hud-screenshot-overlay-grid"></div>
+                    <img id="hud-screenshot-img" src="" alt="Client Verified Telemetry">
+                  </div>
+                </div>
+
+              </div>
+
+              <!-- Growth Strategy Analysis Text -->
+              <div class="hud-strategy-panel">
+                <h4 class="hud-strategy-title">GROWTH_STRATEGY_DECRPT</h4>
+                <p class="hud-strategy-text" id="hud-client-desc">Select a node from the dock to boot telemetry diagnostics...</p>
+              </div>
+
+            </div> <!-- end hud-telemetry-content -->
+
+          </div> <!-- end hud-monitor-body -->
+
+          <!-- HUD Monitor Footer controls -->
+          <div class="hud-monitor-footer">
+            <div class="hud-client-info">
+              <span class="hud-category-label" id="hud-client-cat">PERFORMANCE</span>
+              <h3 class="hud-title-label" id="hud-client-title">CLIENT_PROJECT_INIT</h3>
+            </div>
+            
+            <div class="hud-action-buttons">
+              <a href="#contact" class="btn btn-primary btn-tech-glow" id="hud-btn-achieve">
+                <span>DUPLICATE RESULTS</span>
+                <i data-lucide="copy"></i>
+              </a>
+              <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-tech-outline" id="hud-btn-visit" style="display: none;">
+                <span>DECRYPT LIVE PROTOCOL</span>
+                <i data-lucide="external-link"></i>
+              </a>
+            </div>
+          </div>
+
+        </div> <!-- end hud-monitor-panel -->
+
+      </div> <!-- end hud-console-container -->
+    </section>
+
+    <!-- ROI Calculator Section -->
+    <section id="roi-calculator" class="section roi-section">
+      <div class="section-header">
+        <span class="tech-tag">[ ALGORITHM::GROWTH_SIMULATOR ]</span>
+        <h2 class="section-title">THE GROWTH ROI ENGINE</h2>
+        <p class="section-subtitle">Slide the parameters below to see the simulated growth when integrating PixGen's content creatives and advertising funnel into your business.</p>
+      </div>
+
+      <div class="calculator-container">
+        <!-- Input Controls -->
+        <div class="calc-inputs-panel">
+          <div class="input-group">
+            <div class="label-row">
+              <label for="monthly-ad-spend">Monthly Ad Spend (₹)</label>
+              <span class="slider-bubble" id="ad-spend-val">₹1,00,000</span>
+            </div>
+            <input type="range" id="monthly-ad-spend" min="10000" max="500000" step="5000" value="100000" class="neon-slider purple-slider">
+            <div class="range-labels">
+              <span>₹10k</span>
+              <span>₹5L</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="label-row">
+              <label for="customer-value">Average Customer Value (₹)</label>
+              <span class="slider-bubble" id="customer-val">₹5,000</span>
+            </div>
+            <input type="range" id="customer-value" min="500" max="50000" step="500" value="5000" class="neon-slider cyan-slider">
+            <div class="range-labels">
+              <span>₹500</span>
+              <span>₹50k</span>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <div class="label-row">
+              <label for="ai-automation-rate">Creative & Social Engagement Boost</label>
+              <span class="slider-bubble" id="ai-rate-val">75%</span>
+            </div>
+            <input type="range" id="ai-automation-rate" min="20" max="95" step="5" value="75" class="neon-slider blue-slider">
+            <div class="range-labels">
+              <span>20%</span>
+              <span>95%</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Output Visualizer -->
+        <div class="calc-outputs-panel">
+          <h3 class="output-title">ESTIMATED MONTHLY RETURNS</h3>
+          
+          <div class="output-metrics">
+            <div class="output-card large-output cyan-glow-border">
+              <span class="output-label">Projected Sales Revenue</span>
+              <span class="output-val gradient-text-blue" id="roi-projected-revenue">₹5,00,000</span>
+            </div>
+            
+            <div class="output-subgrid">
+              <div class="output-card purple-glow-border">
+                <span class="output-label">Total Monthly Leads</span>
+                <span class="output-val text-neon-purple" id="roi-qualified-leads">120</span>
+              </div>
+              <div class="output-card blue-glow-border">
+                <span class="output-label">Est. Team Time Saved</span>
+                <span class="output-val text-neon-blue" id="roi-hours-saved">150 hrs</span>
+              </div>
+            </div>
+
+            <div class="output-card roi-percentage-card">
+              <span class="output-label">Net Campaign ROI</span>
+              <span class="output-val text-success" id="roi-net-percentage">400%</span>
+            </div>
+          </div>
+
+          <!-- Mini SVG Graph of Growth -->
+          <div class="calculator-svg-wrapper">
+            <svg viewBox="0 0 400 120" class="calculator-graph-svg">
+              <defs>
+                <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0%" stop-color="var(--neon-cyan)" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="var(--neon-cyan)" stop-opacity="0.0"/>
+                </linearGradient>
+              </defs>
+              <path id="graph-bg-path" d="M0,120 Q100,90 200,60 T400,10 L400,120 L0,120 Z" fill="url(#chartGrad)"></path>
+              <path id="graph-line-path" d="M0,120 Q100,90 200,60 T400,10" fill="none" stroke="var(--neon-cyan)" stroke-width="3"></path>
+              <!-- Animated dot -->
+              <circle id="graph-dot" cx="400" cy="10" r="5" fill="var(--neon-cyan)" class="pulse-dot"></circle>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Booking Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header">
+        <span class="tech-tag">[ ACCESS_DOCK::TRANSMIT_PARAMETERS ]</span>
+        <h2 class="section-title">DEPLOY AUTOMATED GROWTH</h2>
+        <p class="section-subtitle">Ready to outclass your competition? Fill out the brief below, and let's construct your bespoke growth & marketing framework.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Meta Info -->
+        <div class="contact-info-panel">
+          <div class="info-card">
+            <i data-lucide="zap" class="info-icon purple-text"></i>
+            <div>
+              <h4>Content & Social Media</h4>
+              <p>Direct-response video hooks, scroll-stopping ad creatives, and structured social posting to drive organic brand presence.</p>
+            </div>
+          </div>
+          
+          <div class="info-card">
+            <i data-lucide="target" class="info-icon cyan-text"></i>
+            <div>
+              <h4>Performance First</h4>
+              <p>Our advertising setups target bottom-of-funnel users to secure rapid sales and ROAS metrics.</p>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <i data-lucide="globe" class="info-icon blue-text"></i>
+            <div>
+              <h4>Web & Conversion Specialists</h4>
+              <p>Every interface we design is heavily tested to guarantee responsive layouts, high speeds, and optimal user-flows.</p>
+            </div>
+          </div>
+          
+          <!-- Animated stat block -->
+          <div class="studio-status">
+            <div class="status-indicator-dot pulse-green"></div>
+            <span>PixGen Studio Creative Engine is Online. Booking audits for Q3 2026.</span>
+          </div>
+        </div>
+
+        <!-- Glassmorphic Form -->
+        <div class="contact-form-panel">
+          <form id="audit-form" class="audit-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="client-name">Name</label>
+                <input type="text" id="client-name" required placeholder="John Doe">
+              </div>
+              <div class="form-group">
+                <label for="client-email">Email</label>
+                <input type="email" id="client-email" required placeholder="john@company.com">
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="form-group">
+                <label for="client-url">Website URL</label>
+                <input type="url" id="client-url" placeholder="https://yourcompany.com">
+              </div>
+              <div class="form-group">
+                <label for="client-phone">Phone Number</label>
+                <input type="tel" id="client-phone" placeholder="+91 83087 11019">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="client-interest">Primary Objective</label>
+              <select id="client-interest">
+                <option value="all">Complete Growth Ecosystem (Ads + Web + Content)</option>
+                <option value="ads">Performance Marketing (Meta & Google Ads)</option>
+                <option value="web">Website Development (Custom 3D & E-Commerce)</option>
+                <option value="content">Content Creation & Social Media</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="client-msg">Briefly describe your business & goals</label>
+              <textarea id="client-msg" rows="4" placeholder="Tell us what you sell, your current ad spend, and how we can assist you..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block" id="btn-submit-form">
+              <span>Send Growth Audit Request</span>
+              <i data-lucide="send"></i>
+            </button>
+            <div class="form-divider-tech"><span>OR SECURE DIRECT CHAT</span></div>
+            <a href="https://wa.me/918308711019?text=Hello%20PixGen%20Studio,%20I'd%20like%20to%20book%20a%20Growth%20Audit." 
+               target="_blank" 
+               rel="noopener" 
+               class="btn btn-green-glow btn-block">
+              <i data-lucide="message-circle"></i>
+              <span>Chat on WhatsApp</span>
+            </a>
+          </form>
+
+          <!-- Form Success State (Hidden by default) -->
+          <div class="form-success-state" id="form-success">
+            <div class="success-icon-wrapper">
+              <i data-lucide="check-circle-2"></i>
+            </div>
+            <h3>TRANSMISSION RECEIVED</h3>
+            <p>Your business parameters have been synced. A Growth Specialist will reach out within 2 hours with your custom strategy review.</p>
+            <button class="btn btn-outline" id="btn-reset-form">Send Another Request</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="main-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo footer-logo">
+          <img src="assets/logo.jpg" alt="PixGen Studio Logo" class="logo-img">
+          <div class="logo-text-wrapper">
+            <span class="logo-text"><span class="logo-accent">PIXGEN</span> <span class="logo-sub">STUDIO</span></span>
+            <span class="logo-tagline">Content &bull; Consistency &bull; Growth</span>
+          </div>
+        </div>
+        <p>Architects of High-Performance Customer Acquisition & Premium Web Design.</p>
+      </div>
+      <div class="footer-links-grid">
+        <div class="footer-links-col">
+          <h5>Offerings</h5>
+          <a href="#services">AI Automation</a>
+          <a href="#services">Paid Advertising</a>
+          <a href="#services">High-Speed Web</a>
+        </div>
+        <div class="footer-links-col">
+          <h5>Agency</h5>
+          <a href="#portfolio">Showroom</a>
+          <a href="#roi-calculator">ROI Engine</a>
+          <a href="#contact">Get Audited</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 PixGen Studio. All Rights Reserved. Premium Acquisition Engine.</p>
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+        <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- GreenSock (GSAP) Core -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!-- Chart.js for dashboard graphs inside details panel -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom JS Modules (loaded as modules for ES imports) -->
+  <script type="module" src="main.js"></script>
+
+  <!-- Floating Futuristic WhatsApp Badge -->
+  <a href="https://wa.me/918308711019?text=Hello%20PixGen%20Studio,%20I'd%20like%20to%20book%20a%20Growth%20Audit." 
+     target="_blank" 
+     rel="noopener" 
+     class="futuristic-wa-badge" 
+     aria-label="Connect via WhatsApp">
+    <div class="wa-badge-pulse"></div>
+    <div class="wa-badge-pulse-slow"></div>
+    <div class="wa-badge-icon-wrapper">
+      <i data-lucide="message-circle"></i>
+    </div>
+    <span class="wa-badge-text">[CONNECT_DIRECT_WA]</span>
+  </a>
+</body>
+</html>
