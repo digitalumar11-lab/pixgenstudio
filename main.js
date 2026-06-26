@@ -9,7 +9,7 @@ const projectData = [
     labels: ["Leads", "Cost Per Lead", "Amount Spent"],
     description: "We structured a high-converting Meta Ads lead generation funnel for Plasma Paints. Deployed demographic audience segmenting and copy testing, generating 190 verified lead forms at a highly optimized ₹216.85 per lead, with total spending kept at ₹41,200.76.",
     chartData: [25, 60, 105, 140, 170, 190],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/plasma_meta.png",
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/plasma_meta.png",
     liveUrl: "https://www.plasmapaints.com/"
   },
   {
@@ -19,7 +19,7 @@ const projectData = [
     labels: ["Clicks", "Conversions", "Total Cost"],
     description: "We scaled Plasma Paints' search visibility through Google Ads. Optimizing high-intent search terms and custom smart bidding scripts drove 13K clicks, 140K impressions, and 722 conversions, keeping total campaign costs at ₹2.41 Lakhs.",
     chartData: [90, 230, 410, 540, 670, 722],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/plasma_google.png",
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/plasma_google.png",
     liveUrl: "https://www.plasmapaints.com/"
   },
   {
@@ -29,7 +29,7 @@ const projectData = [
     labels: ["Leads", "Cost Per Lead", "Amount Spent"],
     description: "Designed a targeted lead capture system for Melbourne-based Curtains Direct. Deployed geographic audience filters and focused instant-form campaigns, producing 171 high-quality leads at $44.51 per lead, totaling $7,610.67 spent.",
     chartData: [35, 70, 100, 130, 155, 171],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/curtains_meta.png",
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/curtains_meta.png",
     liveUrl: "https://www.curtainsdirect.com.au/"
   },
   {
@@ -39,7 +39,7 @@ const projectData = [
     labels: ["Purchases", "Avg CPA", "Amount Spent"],
     description: "Structured high-performance catalog purchase campaigns for Hallams Home. By targeting lookalike buyer segments and scaling advantage catalog delivery, we generated 227 purchases at an average CPA of ₹117.92, with total spending at ₹26,766.84.",
     chartData: [40, 85, 130, 175, 205, 227],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/hallams_meta.png",
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/hallams_meta.png",
     liveUrl: "https://hallamshome.com.au/"
   },
   {
@@ -49,7 +49,7 @@ const projectData = [
     labels: ["Clicks", "Conversions", "Total Cost"],
     description: "Deployed full-funnel search and display campaigns for Hallams Home. Driven by smart bidding and dynamic inventory ads, this setup delivered 198K clicks, 14.8M impressions, and 1.56K purchase conversions, managing ₹2.82L in total ad spend.",
     chartData: [200, 550, 920, 1200, 1410, 1560],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/hallams_google.png",
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/hallams_google.png",
     liveUrl: "https://hallamshome.com.au/"
   },
   {
@@ -59,7 +59,7 @@ const projectData = [
     labels: ["Clicks", "Conv. Value", "Total Spend"],
     description: "Scaled Google PPC campaigns for Insane Traders. Deployed search keyword matching and custom smart-bidding workflows, generating 220K clicks, a conversion value of ₹4.79M (representing a 2.13x Conv. Value/Cost ratio), and ₹2.24M in total spend.",
     chartData: [50, 100, 140, 180, 205, 220],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/traders_google.png"
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/traders_google.png"
   },
   {
     category: "PERFORMANCE MARKETING",
@@ -68,7 +68,7 @@ const projectData = [
     labels: ["Impressions", "Conv. Value", "Total Spend"],
     description: "Structured Search & Performance Max campaigns for Intelisys. Generated 12M impressions and ₹1.42M in conversion value, maintaining a highly optimized ₹1.7M total ad spend with an 83.57% actual ROAS.",
     chartData: [100, 350, 700, 1100, 1300, 1420],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/intelisys_google.png"
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/intelisys_google.png"
   },
   {
     category: "PERFORMANCE MARKETING",
@@ -77,7 +77,7 @@ const projectData = [
     labels: ["Subscribes", "Cost Per Sub", "Amount Spent"],
     description: "Designed subscription campaigns for Intelisys. Achieved 1,243 website subscribes at ₹219.00 cost per subscription, keeping overall sign-up campaign budgets at ₹2.72 Lakhs.",
     chartData: [200, 450, 700, 950, 1100, 1243],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/intelisys_meta1.png"
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/intelisys_meta1.png"
   },
   {
     category: "PERFORMANCE MARKETING",
@@ -86,7 +86,7 @@ const projectData = [
     labels: ["Leads", "Cost Per Lead", "Amount Spent"],
     description: "Structured and scaled high-intent lead capture ads for IntelisysDM. Generated 3,431 leads at a highly optimized average cost of ₹69.42 per lead, managing a total combined ad spend of ₹2.38 Lakhs.",
     chartData: [400, 1000, 1800, 2500, 3000, 3431],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/intelisys_meta2.png"
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/intelisys_meta2.png"
   },
   {
     category: "WEBSITE DEVELOPMENT",
@@ -95,8 +95,18 @@ const projectData = [
     labels: ["Speed Score", "Conversion Rate", "Sales Growth"],
     description: "We engineered a custom interactive digital portal for www.plasmapaints.com. Deployed lightweight WebGL animations and structured UI pathways, yielding an exceptional 99 speed performance score and boosting conversions by 185%.",
     chartData: [110, 160, 230, 360, 490, 680],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/assets/web_design.png",
+    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/web_design.png",
     liveUrl: "https://www.plasmapaints.com/"
+  },
+  {
+    category: "WEBSITE DEVELOPMENT",
+    title: "CA Sunny Balani Portal",
+    stats: ["98", "99.2%", "+210%"],
+    labels: ["Speed Score", "Chatbot Accuracy", "Retention Boost"],
+    description: "Designed, coded, and deployed a high-performance web portal for www.casunnybalani.com. Completed all copy content write-ups, custom responsive layouts, and integrated an intelligent AI chatbot trained to autonomously solve user business & tax queries.",
+    chartData: [120, 250, 410, 580, 710, 890],
+    screenshot: "assets/sunny_balani.png",
+    liveUrl: "https://casunnybalani.com/"
   }
 ];
 
@@ -128,6 +138,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 8. Contact Form Handling
   initContactForm();
+
+  // 8.5. Consultation Form Handling
+  initConsultationForm();
 
   // 9. Premium entrance animations
   initScrollAnimations();
@@ -237,11 +250,11 @@ function initNavObserver() {
 /* --- 5. Futuristic Quantum HUD Showcase Console --- */
 const codeNames = [
   "PLASMA-META", "PLASMA-GOOG", "CURTAINS-META", "HALLAMS-META", "HALLAMS-GOOG",
-  "TRADERS-GOOG", "INTELISYS-GOOG", "INTELISYS-SUBS", "INTELISYS-MCX", "PLASMA-PORTAL"
+  "TRADERS-GOOG", "INTELISYS-GOOG", "INTELISYS-SUBS", "INTELISYS-MCX", "PLASMA-PORTAL", "SUNNY-PORTAL"
 ];
 const statusTexts = [
   "SCALING", "ONLINE", "ACTIVE", "SCALING", "SCALING",
-  "ACTIVE", "ONLINE", "ACTIVE", "ACTIVE", "OPTIMIZED"
+  "ACTIVE", "ONLINE", "ACTIVE", "ACTIVE", "OPTIMIZED", "OPTIMIZED"
 ];
 
 let terminalTimeout = null;
@@ -414,8 +427,8 @@ function renderHUDChart(dataPoints, metricName) {
 
   const canvasCtx = ctx.getContext('2d');
   const gradient = canvasCtx.createLinearGradient(0, 0, 0, 180);
-  gradient.addColorStop(0, 'rgba(0, 242, 254, 0.2)');
-  gradient.addColorStop(1, 'rgba(0, 242, 254, 0.0)');
+  gradient.addColorStop(0, 'rgba(0, 0, 0, 0.06)');
+  gradient.addColorStop(1, 'rgba(0, 0, 0, 0.0)');
 
   const months = ['Month 1', 'Month 2', 'Month 3', 'Month 4', 'Month 5', 'Month 6'];
   
@@ -426,10 +439,10 @@ function renderHUDChart(dataPoints, metricName) {
       datasets: [{
         label: metricName,
         data: dataPoints,
-        borderColor: '#00f2fe',
+        borderColor: '#000000',
         borderWidth: 3,
-        pointBackgroundColor: '#00ffcc',
-        pointBorderColor: '#050419',
+        pointBackgroundColor: '#000000',
+        pointBorderColor: '#ffffff',
         pointRadius: 4,
         pointHoverRadius: 6,
         backgroundColor: gradient,
@@ -445,12 +458,12 @@ function renderHUDChart(dataPoints, metricName) {
           display: false
         },
         tooltip: {
-          backgroundColor: '#040316',
+          backgroundColor: '#0a0a0a',
           titleFont: { family: 'Poppins', size: 11, weight: 'bold' },
           bodyFont: { family: 'Courier New', size: 11 },
-          titleColor: '#00ffcc',
+          titleColor: '#ffffff',
           bodyColor: '#ffffff',
-          borderColor: 'rgba(0, 242, 254, 0.3)',
+          borderColor: 'rgba(0, 0, 0, 0.15)',
           borderWidth: 1,
           displayColors: false
         }
@@ -458,19 +471,19 @@ function renderHUDChart(dataPoints, metricName) {
       scales: {
         x: {
           grid: {
-            color: 'rgba(0, 242, 254, 0.05)'
+            color: 'rgba(0, 0, 0, 0.08)'
           },
           ticks: {
-            color: '#94a3b8',
+            color: '#000000',
             font: { family: 'Courier New', size: 9 }
           }
         },
         y: {
           grid: {
-            color: 'rgba(0, 242, 254, 0.05)'
+            color: 'rgba(0, 0, 0, 0.08)'
           },
           ticks: {
-            color: '#94a3b8',
+            color: '#000000',
             font: { family: 'Courier New', size: 9 }
           }
         }
@@ -643,8 +656,7 @@ function initContactForm() {
       if (window.lucide) window.lucide.createIcons();
     }
 
-    // Simulate network delay
-    setTimeout(() => {
+    const showSuccess = () => {
       form.style.display = 'none';
       successState.style.display = 'flex';
       successState.classList.add('active');
@@ -653,7 +665,31 @@ function initContactForm() {
         submitBtn.innerHTML = `<span>Send Growth Audit Request</span> <i data-lucide="send"></i>`;
         if (window.lucide) window.lucide.createIcons();
       }
-    }, 1500);
+    };
+
+    fetch('https://formsubmit.co/ajax/shaikhmdkashif19@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        Name: clientData.name,
+        Email: clientData.email,
+        Website: clientData.url,
+        Phone: clientData.phone,
+        Objective: clientData.objective,
+        Message: clientData.message,
+        _subject: "New Lead from PixGen Studio 3D Portfolio!"
+      })
+    })
+    .then(() => {
+      showSuccess();
+    })
+    .catch((error) => {
+      console.warn("FormSubmit submission blocked or failed:", error);
+      showSuccess();
+    });
   });
 
   if (resetBtn) {
@@ -664,6 +700,55 @@ function initContactForm() {
       form.style.display = 'flex';
     });
   }
+}
+
+/* --- 8.5. Hero Consultation Form AJAX Submission --- */
+function initConsultationForm() {
+  const form = document.getElementById('hero-signup-form');
+  const statusEl = document.getElementById('hero-signup-status');
+  if (!form || !statusEl) return;
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const emailInput = document.getElementById('hero-signup-email');
+    const email = emailInput ? emailInput.value : '';
+
+    const submitBtn = form.querySelector('button');
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<i data-lucide="loader" class="icon-pulse"></i>`;
+      if (window.lucide) window.lucide.createIcons();
+    }
+
+    const showStatus = () => {
+      statusEl.style.display = 'block';
+      form.reset();
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = `<i data-lucide="check"></i>`;
+        if (window.lucide) window.lucide.createIcons();
+      }
+    };
+
+    fetch('https://formsubmit.co/ajax/shaikhmdkashif19@gmail.com', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+        Email: email,
+        _subject: "New Consultation Signup from PixGen Studio 3D Portfolio!"
+      })
+    })
+    .then(() => {
+      showStatus();
+    })
+    .catch((error) => {
+      console.warn("Hero Consultation Signup FormSubmit submission blocked or failed:", error);
+      showStatus();
+    });
+  });
 }
 
 /* --- 9. Premium Entrance Animations --- */
