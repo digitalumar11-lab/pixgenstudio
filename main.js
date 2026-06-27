@@ -9,7 +9,7 @@ const projectData = [
     labels: ["Leads", "Cost Per Lead", "Amount Spent"],
     description: "We structured a high-converting Meta Ads lead generation funnel for Plasma Paints. Deployed demographic audience segmenting and copy testing, generating 190 verified lead forms at a highly optimized ₹216.85 per lead, with total spending kept at ₹41,200.76.",
     chartData: [25, 60, 105, 140, 170, 190],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/plasma_meta.png",
+    screenshot: "assets/plasma_meta.png",
     liveUrl: "https://www.plasmapaints.com/"
   },
   {
@@ -19,7 +19,7 @@ const projectData = [
     labels: ["Clicks", "Conversions", "Total Cost"],
     description: "We scaled Plasma Paints' search visibility through Google Ads. Optimizing high-intent search terms and custom smart bidding scripts drove 13K clicks, 140K impressions, and 722 conversions, keeping total campaign costs at ₹2.41 Lakhs.",
     chartData: [90, 230, 410, 540, 670, 722],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/plasma_google.png",
+    screenshot: "assets/plasma_google.png",
     liveUrl: "https://www.plasmapaints.com/"
   },
   {
@@ -29,7 +29,7 @@ const projectData = [
     labels: ["Leads", "Cost Per Lead", "Amount Spent"],
     description: "Designed a targeted lead capture system for Melbourne-based Curtains Direct. Deployed geographic audience filters and focused instant-form campaigns, producing 171 high-quality leads at $44.51 per lead, totaling $7,610.67 spent.",
     chartData: [35, 70, 100, 130, 155, 171],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/curtains_meta.png",
+    screenshot: "assets/curtains_meta.png",
     liveUrl: "https://www.curtainsdirect.com.au/"
   },
   {
@@ -39,7 +39,7 @@ const projectData = [
     labels: ["Purchases", "Avg CPA", "Amount Spent"],
     description: "Structured high-performance catalog purchase campaigns for Hallams Home. By targeting lookalike buyer segments and scaling advantage catalog delivery, we generated 227 purchases at an average CPA of ₹117.92, with total spending at ₹26,766.84.",
     chartData: [40, 85, 130, 175, 205, 227],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/hallams_meta.png",
+    screenshot: "assets/hallams_meta.png",
     liveUrl: "https://hallamshome.com.au/"
   },
   {
@@ -49,7 +49,7 @@ const projectData = [
     labels: ["Clicks", "Conversions", "Total Cost"],
     description: "Deployed full-funnel search and display campaigns for Hallams Home. Driven by smart bidding and dynamic inventory ads, this setup delivered 198K clicks, 14.8M impressions, and 1.56K purchase conversions, managing ₹2.82L in total ad spend.",
     chartData: [200, 550, 920, 1200, 1410, 1560],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/hallams_google.png",
+    screenshot: "assets/hallams_google.png",
     liveUrl: "https://hallamshome.com.au/"
   },
   {
@@ -59,7 +59,7 @@ const projectData = [
     labels: ["Clicks", "Conv. Value", "Total Spend"],
     description: "Scaled Google PPC campaigns for Insane Traders. Deployed search keyword matching and custom smart-bidding workflows, generating 220K clicks, a conversion value of ₹4.79M (representing a 2.13x Conv. Value/Cost ratio), and ₹2.24M in total spend.",
     chartData: [50, 100, 140, 180, 205, 220],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/traders_google.png"
+    screenshot: "assets/traders_google.png"
   },
   {
     category: "PERFORMANCE MARKETING",
@@ -68,7 +68,7 @@ const projectData = [
     labels: ["Impressions", "Conv. Value", "Total Spend"],
     description: "Structured Search & Performance Max campaigns for Intelisys. Generated 12M impressions and ₹1.42M in conversion value, maintaining a highly optimized ₹1.7M total ad spend with an 83.57% actual ROAS.",
     chartData: [100, 350, 700, 1100, 1300, 1420],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/intelisys_google.png"
+    screenshot: "assets/intelisys_google.png"
   },
   {
     category: "PERFORMANCE MARKETING",
@@ -77,7 +77,7 @@ const projectData = [
     labels: ["Subscribes", "Cost Per Sub", "Amount Spent"],
     description: "Designed subscription campaigns for Intelisys. Achieved 1,243 website subscribes at ₹219.00 cost per subscription, keeping overall sign-up campaign budgets at ₹2.72 Lakhs.",
     chartData: [200, 450, 700, 950, 1100, 1243],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/intelisys_meta1.png"
+    screenshot: "assets/intelisys_meta1.png"
   },
   {
     category: "PERFORMANCE MARKETING",
@@ -86,7 +86,7 @@ const projectData = [
     labels: ["Leads", "Cost Per Lead", "Amount Spent"],
     description: "Structured and scaled high-intent lead capture ads for IntelisysDM. Generated 3,431 leads at a highly optimized average cost of ₹69.42 per lead, managing a total combined ad spend of ₹2.38 Lakhs.",
     chartData: [400, 1000, 1800, 2500, 3000, 3431],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/intelisys_meta2.png"
+    screenshot: "assets/intelisys_meta2.png"
   },
   {
     category: "WEBSITE DEVELOPMENT",
@@ -95,7 +95,7 @@ const projectData = [
     labels: ["Speed Score", "Conversion Rate", "Sales Growth"],
     description: "We engineered a custom interactive digital portal for www.plasmapaints.com. Deployed lightweight WebGL animations and structured UI pathways, yielding an exceptional 99 speed performance score and boosting conversions by 185%.",
     chartData: [110, 160, 230, 360, 490, 680],
-    screenshot: "https://digitalumar11-lab.github.io/pixgenstudio/web_design.png",
+    screenshot: "assets/web_design.png",
     liveUrl: "https://www.plasmapaints.com/"
   },
   {
@@ -319,7 +319,7 @@ function onNodeSelect(index, data, isInitial = false) {
     populateHUDTelemetry(data);
     const logContainer = document.getElementById('hud-terminal-log');
     if (logContainer) {
-      logContainer.innerHTML = `>> DOCK CONNECTION SECURE.\n>> LOAD PROTOCOL [${data.codeName}] RUNNING.\n>> DATA STREAM DECRYPTED.\n<span class="hud-terminal-cursor"></span>`;
+      logContainer.innerHTML = `>> Connection secure.\n>> Loading verified metrics for [${data.codeName}]...\n>> Data synced. Displaying case study diagnostics.\n<span class="hud-terminal-cursor"></span>`;
     }
   } else {
     telemetryContent.style.opacity = '0.35';
@@ -349,11 +349,11 @@ function runTerminalDiagnostics(project, onComplete) {
   logContainer.innerHTML = '';
 
   const lines = [
-    `>> INITIALIZING DOCK NODE [PXG-${project.codeName}]...`,
-    `>> ESTABLISHING ENCRYPTED SHA-256 DATABASE LINK... DONE.`,
-    `>> DECRYPTING ACQUISITION METRICS AND CONVERSION LEDGER...`,
-    `>> SHIELDING SENSITIVE ACCOUNT IDs AND CONTACT CREDENTIALS...`,
-    `>> SYS_CONN: SECURE. METRICS STREAM BOOTED SUCCESSFULLY.`
+    `>> Connecting to active channel database for [PXG-${project.codeName}]...`,
+    `>> Querying ad account and web performance database... DONE.`,
+    `>> Extracting verified CPA, conversion rates, and revenue benchmarks...`,
+    `>> Masking client-sensitive credentials and account identifiers...`,
+    `>> Sync complete. Loading dashboard metrics telemetry.`
   ];
 
   let currentLine = 0;
