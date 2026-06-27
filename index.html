@@ -14,7 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="style.css?v=1.4">
+  <link rel="stylesheet" href="style.css?v=1.5">
   
 
 </head>
@@ -250,7 +250,7 @@
       </div>
     </section>
 
-    <!-- Futuristic Quantum HUD Showcase Section -->
+    <!-- Ultra-Premium Client Case Study Showcase Section -->
     <section id="portfolio" class="section portfolio-section">
       <!-- Floating Marketing/Design/Web Elements -->
       <div class="floating-deco deco-portfolio-terminal"><i data-lucide="terminal" style="width: 14px; height: 14px;"></i></div>
@@ -262,126 +262,92 @@
         <p class="section-subtitle">Interact with our case studies. Select a client node below to load diagnostic logs, growth charts, and live dashboard screenshots.</p>
       </div>
 
-      <!-- Quantum HUD Console Grid Wrapper -->
-      <div class="hud-console-container" id="hud-console-container">
+      <!-- Bento Case Study Redesign Showcase Container -->
+      <div class="portfolio-showcase-container">
         
-        <!-- Command Dock (Left Selector Panel) -->
-        <div class="hud-command-dock">
-          <div class="hud-dock-header">
-            <span class="hud-dock-title"><i data-lucide="terminal"></i> NODES_DOCK</span>
-            <span class="hud-status-badge online"><span class="hud-status-dot pulse-green"></span> ONLINE</span>
-          </div>
-          <div class="hud-dock-buttons" id="hud-dock-buttons">
+        <!-- Centered Horizontal Navigation Tabs -->
+        <div class="showcase-tabs-wrapper">
+          <div class="showcase-tabs" id="hud-dock-buttons">
             <!-- Buttons dynamically generated here -->
           </div>
         </div>
 
-        <!-- Telemetry HUD Monitor (Right Dashboard Panel) -->
-        <div class="hud-monitor-panel">
+        <!-- 2-Column Bento Layout -->
+        <div class="showcase-content-grid">
           
-          <!-- Terminal Diagnostic Screen Header -->
-          <div class="hud-monitor-header">
-            <div class="hud-monitor-tabs">
-              <span class="monitor-tab active"><i data-lucide="cpu"></i> DIAGNOSTIC_SCREEN</span>
-            </div>
-            <div class="hud-monitor-coordinates">
-              <span>SECURE INTERFACE</span>
-            </div>
-          </div>
-
-          <div class="hud-monitor-body">
+          <!-- Left Column: Stats & Details -->
+          <div class="showcase-left-col">
             
-            <!-- Typewriter Terminal Log View -->
-            <div class="hud-terminal-log-wrapper">
-              <div class="hud-terminal-log-header">
-                <span>DIAGNOSTIC_LOGGER</span>
-                <span class="hud-terminal-id">ID: PXG-SYS-99X</span>
-              </div>
-              <div class="hud-terminal-log-content" id="hud-terminal-log">
-                <!-- Autotyping logs appear here -->
-              </div>
-            </div>
-
-            <!-- Main Telemetry Content: Metrics & Neon Chart & Decrypted Viewport -->
-            <div class="hud-telemetry-content">
-              
-              <!-- Metrics Panel -->
-              <div class="hud-metrics-panel">
-                <div class="hud-metric-card" id="hud-metric-1">
-                  <span class="hud-metric-lbl">METRIC_1</span>
-                  <span class="hud-metric-val gradient-text-blue" id="hud-metric-val-1">0.00</span>
-                </div>
-                <div class="hud-metric-card" id="hud-metric-2">
-                  <span class="hud-metric-lbl">METRIC_2</span>
-                  <span class="hud-metric-val gradient-text-purple" id="hud-metric-val-2">0.00</span>
-                </div>
-                <div class="hud-metric-card" id="hud-metric-3">
-                  <span class="hud-metric-lbl">METRIC_3</span>
-                  <span class="hud-metric-val" id="hud-metric-val-3">0.00</span>
-                </div>
-              </div>
-
-              <!-- Interactive Display Area (Neon Graph + Decrypted Viewport stacked) -->
-              <div class="hud-display-grid">
-                
-                <!-- Neon Growth Chart -->
-                <div class="hud-chart-card">
-                  <div class="card-tech-header">
-                    <span>GROWTH_CHART</span>
-                    <span>DIAGNOSTIC: ACTIVE</span>
-                  </div>
-                  <div class="hud-chart-wrapper">
-                    <canvas id="hud-growth-chart"></canvas>
-                  </div>
-                </div>
-
-                <!-- Decrypted Viewport (Dashboard Crop) -->
-                <div class="hud-screenshot-card">
-                  <div class="card-tech-header">
-                    <span>LIVE_VIEWPORT</span>
-                    <span id="hud-crop-coords">VERIFIED VIEW</span>
-                  </div>
-                  <div class="hud-screenshot-wrapper">
-                    <div class="hud-screenshot-overlay-scanlines"></div>
-                    <div class="hud-screenshot-overlay-grid"></div>
-                    <img id="hud-screenshot-img" src="" alt="Client Verified Telemetry">
-                  </div>
-                </div>
-
-              </div>
-
-              <!-- Growth Strategy Analysis Text -->
-              <div class="hud-strategy-panel">
-                <h4 class="hud-strategy-title">GROWTH STRATEGY & IMPACT</h4>
-                <p class="hud-strategy-text" id="hud-client-desc">Select a client node from the dock to view the performance blueprint...</p>
-              </div>
-
-            </div> <!-- end hud-telemetry-content -->
-
-          </div> <!-- end hud-monitor-body -->
-
-          <!-- HUD Monitor Footer controls -->
-          <div class="hud-monitor-footer">
-            <div class="hud-client-info">
+            <!-- Category & Brand Header Card -->
+            <div class="showcase-brand-card">
               <span class="hud-category-label" id="hud-client-cat">PERFORMANCE</span>
               <h3 class="hud-title-label" id="hud-client-title">CLIENT_PROJECT_INIT</h3>
             </div>
-            
+
+            <!-- Stats Bento Grid -->
+            <div class="hud-metrics-panel">
+              <div class="hud-metric-card" id="hud-metric-1">
+                <span class="hud-metric-lbl">METRIC_1</span>
+                <span class="hud-metric-val" id="hud-metric-val-1">0.00</span>
+              </div>
+              <div class="hud-metric-card" id="hud-metric-2">
+                <span class="hud-metric-lbl">METRIC_2</span>
+                <span class="hud-metric-val" id="hud-metric-val-2">0.00</span>
+              </div>
+              <div class="hud-metric-card" id="hud-metric-3">
+                <span class="hud-metric-lbl">METRIC_3</span>
+                <span class="hud-metric-val" id="hud-metric-val-3">0.00</span>
+              </div>
+            </div>
+
+            <!-- Strategy Overview Card -->
+            <div class="hud-strategy-panel">
+              <h4 class="hud-strategy-title">Growth Strategy & Impact</h4>
+              <p class="hud-strategy-text" id="hud-client-desc">Select a client node from the dock to view the performance blueprint...</p>
+            </div>
+
+            <!-- Action Buttons -->
             <div class="hud-action-buttons">
-              <a href="#contact" class="btn btn-primary btn-tech-glow" id="hud-btn-achieve">
-                <span>GET SIMILAR RESULTS</span>
-                <i data-lucide="copy"></i>
+              <a href="#contact" class="btn-pill-solid" id="hud-btn-achieve">
+                <span>Book Similar Audit</span>
+                <i data-lucide="copy" style="width: 14px; height: 14px;"></i>
               </a>
-              <a href="#" target="_blank" rel="noopener" class="btn btn-outline btn-tech-outline" id="hud-btn-visit" style="display: none;">
-                <span>VISIT LIVE WEBSITE</span>
-                <i data-lucide="external-link"></i>
+              <a href="#" target="_blank" rel="noopener" class="btn-pill-outline" id="hud-btn-visit" style="display: none;">
+                <span>Visit Live Site</span>
+                <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
               </a>
             </div>
-          </div>
 
-        </div> <!-- end hud-monitor-panel -->
+          </div> <!-- end showcase-left-col -->
 
-      </div> <!-- end hud-console-container -->
+          <!-- Right Column: Visuals (Browser Mockup + Chart stacked) -->
+          <div class="showcase-right-col">
+            
+            <!-- Browser Mockup -->
+            <div class="hud-screenshot-card">
+              <div class="card-tech-header">
+                <span>live viewport</span>
+              </div>
+              <div class="hud-screenshot-wrapper">
+                <img id="hud-screenshot-img" src="" alt="Client Verified Telemetry">
+              </div>
+            </div>
+
+            <!-- Growth Line Chart -->
+            <div class="hud-chart-card">
+              <div class="card-tech-header">
+                <span>6-month growth trend</span>
+              </div>
+              <div class="hud-chart-wrapper">
+                <canvas id="hud-growth-chart"></canvas>
+              </div>
+            </div>
+
+          </div> <!-- end showcase-right-col -->
+
+        </div> <!-- end showcase-content-grid -->
+
+      </div> <!-- end portfolio-showcase-container -->
     </section>
 
     <!-- ROI Calculator Section -->
