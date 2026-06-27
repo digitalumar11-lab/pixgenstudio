@@ -1318,18 +1318,20 @@ body.cursor-hover .custom-cursor-glow {
 @media (max-width: 768px) {
   .hud-console-container {
     grid-template-columns: 1fr;
-    border: 1px solid var(--border-color);
-    background: rgba(6, 4, 18, 0.8) !important;
+    border: 1.5px solid #000000 !important;
+    background: #ffffff !important;
     border-radius: 16px;
-    padding: 1rem;
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    padding: 1.25rem;
+    box-shadow: none !important;
     gap: 1rem;
   }
   .hud-command-dock {
     background: none !important;
     border: none !important;
-    padding: 0 0 1rem 0 !important;
+    padding: 0 0 1.25rem 0 !important;
     box-shadow: none !important;
+    border-bottom: 1.5px solid #000000 !important;
+    margin-bottom: 0.5rem;
   }
   .hud-monitor-panel {
     background: none !important;
@@ -1360,12 +1362,13 @@ body.cursor-hover .custom-cursor-glow {
     display: flex !important;
     justify-content: space-between;
     align-items: center;
-    background: rgba(10, 8, 28, 0.45) !important;
-    border: 1px solid var(--border-color);
-    border-radius: 6px;
-    padding: 0.6rem 0.5rem;
+    background: #ffffff !important;
+    border: 1.5px solid #000000 !important;
+    border-radius: 12px;
+    padding: 0.85rem 0.5rem;
     gap: 0.25rem;
     grid-template-columns: none;
+    color: #000000 !important;
   }
   .hud-metric-card {
     background: none !important;
@@ -1376,7 +1379,7 @@ body.cursor-hover .custom-cursor-glow {
     text-align: center;
   }
   .hud-metric-card:not(:last-child) {
-    border-right: 1px solid rgba(255, 255, 255, 0.15) !important;
+    border-right: 1.5px solid #000000 !important;
   }
   .hud-metric-card::after, .hud-metric-card::before {
     display: none !important;
@@ -1384,9 +1387,11 @@ body.cursor-hover .custom-cursor-glow {
   .hud-metric-lbl {
     font-size: 0.55rem;
     margin-bottom: 0.2rem;
+    color: rgba(0, 0, 0, 0.6) !important;
   }
   .hud-metric-val {
     font-size: 1.15rem;
+    color: #000000 !important;
   }
   .hud-display-grid {
     grid-template-columns: 1fr;
@@ -2984,10 +2989,10 @@ body.no-scroll {
   opacity: 0.6;
 }
 
-/* Hero Footer Split (Three Columns) */
+/* Hero Footer Split (Two Columns) */
 .hero-footer-fresh {
   display: grid;
-  grid-template-columns: 0.6fr 1.15fr 1.25fr;
+  grid-template-columns: 0.6fr 2.4fr;
   gap: 4rem;
   align-items: center;
   border-top: 1.5px solid #000000;
