@@ -1318,25 +1318,25 @@ body.cursor-hover .custom-cursor-glow {
 @media (max-width: 768px) {
   .hud-console-container {
     grid-template-columns: 1fr;
-    border: 1.5px solid #000000 !important;
-    background: #ffffff !important;
-    border-radius: 16px;
-    padding: 1.25rem;
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
     box-shadow: none !important;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   .hud-command-dock {
-    background: none !important;
-    border: none !important;
-    padding: 0 0 1.25rem 0 !important;
+    background: #ffffff !important;
+    border: 1.5px solid #000000 !important;
+    border-radius: 16px !important;
+    padding: 1.25rem !important;
     box-shadow: none !important;
-    border-bottom: 1.5px solid #000000 !important;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0px !important;
   }
   .hud-monitor-panel {
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
+    background: #ffffff !important;
+    border: 1.5px solid #000000 !important;
+    border-radius: 16px !important;
+    padding: 1.25rem !important;
     box-shadow: none !important;
   }
   .hud-dock-buttons {
@@ -1431,6 +1431,15 @@ body.cursor-hover .custom-cursor-glow {
     align-items: center;
     gap: 1.25rem;
     text-align: center;
+  }
+  .hud-action-buttons {
+    flex-direction: column !important;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .hud-action-buttons .btn {
+    width: 100% !important;
+    justify-content: center;
   }
   .hud-terminal-log-wrapper {
     padding: 0.5rem 0.75rem;
