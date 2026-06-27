@@ -274,9 +274,18 @@ function initHUDConsole() {
     btn.setAttribute('data-index', idx);
     if (idx === 0) btn.classList.add('active');
 
+    const cleanName = project.title
+      .replace(" Meta Ads", "")
+      .replace(" Google Ads", "")
+      .replace(" Custom Portal", "")
+      .replace(" Subscribes", "")
+      .replace(" MCX Leads", "")
+      .replace(" Portal", "");
+    const tagText = project.category.includes("MARKETING") ? "Ads" : "Web";
+
     btn.innerHTML = `
-      <span>[PXG-${project.codeName}]</span>
-      <span class="hud-btn-status">${project.statusText}</span>
+      <span class="hud-btn-name">${cleanName}</span>
+      <span class="hud-btn-status">${tagText}</span>
     `;
 
     btn.addEventListener('click', () => {
