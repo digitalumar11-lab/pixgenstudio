@@ -1315,137 +1315,7 @@ body.cursor-hover .custom-cursor-glow {
   }
 }
 
-@media (max-width: 768px) {
-  .hud-console-container {
-    grid-template-columns: 1fr;
-    border: none !important;
-    background: transparent !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    gap: 1.5rem;
-  }
-  .hud-command-dock {
-    background: #ffffff !important;
-    border: 1.5px solid #000000 !important;
-    border-radius: 16px !important;
-    padding: 1.25rem !important;
-    box-shadow: none !important;
-    margin-bottom: 0px !important;
-  }
-  .hud-monitor-panel {
-    background: #ffffff !important;
-    border: 1.5px solid #000000 !important;
-    border-radius: 16px !important;
-    padding: 1.25rem !important;
-    box-shadow: none !important;
-  }
-  .hud-dock-buttons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-    gap: 0.5rem;
-    padding-bottom: 0.5rem;
-    overflow-y: hidden;
-  }
-  .hud-dock-buttons::-webkit-scrollbar {
-    display: none;
-  }
-  .hud-dock-btn {
-    flex: 0 0 auto;
-    padding: 0.5rem 1rem;
-    font-size: 0.7rem;
-  }
-  .hud-metrics-panel {
-    display: flex !important;
-    justify-content: space-between;
-    align-items: center;
-    background: #ffffff !important;
-    border: 1.5px solid #000000 !important;
-    border-radius: 12px;
-    padding: 0.85rem 0.5rem;
-    gap: 0.25rem;
-    grid-template-columns: none;
-    color: #000000 !important;
-  }
-  .hud-metric-card {
-    background: none !important;
-    border: none !important;
-    padding: 0 !important;
-    box-shadow: none !important;
-    flex: 1;
-    text-align: center;
-  }
-  .hud-metric-card:not(:last-child) {
-    border-right: 1.5px solid #000000 !important;
-  }
-  .hud-metric-card::after, .hud-metric-card::before {
-    display: none !important;
-  }
-  .hud-metric-lbl {
-    font-size: 0.55rem;
-    margin-bottom: 0.2rem;
-    color: rgba(0, 0, 0, 0.6) !important;
-  }
-  .hud-metric-val {
-    font-size: 1.15rem;
-    color: #000000 !important;
-  }
-  .hud-display-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-  }
-  .hud-chart-wrapper, .hud-screenshot-wrapper {
-    height: 160px;
-  }
-  .hud-terminal-log-content {
-    font-size: 0.65rem;
-  }
-  .hud-action-buttons {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 0.75rem;
-  }
-  .hud-action-buttons .btn {
-    width: auto;
-    flex: 0 1 auto;
-    font-size: 0.75rem;
-    padding: 0.6rem 1.2rem;
-  }
-}
 
-@media (max-width: 480px) {
-  .hud-monitor-header {
-    padding: 0.75rem 1rem;
-  }
-  .hud-monitor-body {
-    padding: 1rem;
-  }
-  .hud-monitor-footer {
-    padding: 1.25rem 1rem;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.25rem;
-    text-align: center;
-  }
-  .hud-action-buttons {
-    flex-direction: column !important;
-    width: 100%;
-    gap: 0.5rem;
-  }
-  .hud-action-buttons .btn {
-    width: 100% !important;
-    justify-content: center;
-  }
-  .hud-terminal-log-wrapper {
-    padding: 0.5rem 0.75rem;
-    height: 70px;
-  }
-}
 
 /* --- ROI Calculator Section --- */
 .roi-section {
@@ -2664,64 +2534,54 @@ body.no-scroll {
 /* ==========================================================================
    COCKPIT CONSOLE DASHBOARD - CLEAN LIGHT MODE OVERRIDES
    ========================================================================== */
-.hud-command-dock,
-.hud-monitor-panel,
-.hud-chart-card,
-.hud-screenshot-card,
-.hud-strategy-panel,
-.hud-metric-card {
-  background: #ffffff !important;
-  border: 1.5px solid #000000 !important;
-  color: #000000 !important;
-  box-shadow: none !important;
-  border-radius: 16px !important;
+/* ==========================================================================
+   COCKPIT CONSOLE DASHBOARD - CLEAN LIGHT MODE OVERRIDES
+   ========================================================================== */
+.portfolio-showcase-container {
+  max-width: 1200px !important;
+  margin: 3rem auto 6rem auto !important;
+  padding: 0 1rem !important;
+  position: relative !important;
+  width: 100% !important;
 }
 
-/* Borders */
-.hud-dock-header,
-.hud-dock-buttons,
-.hud-monitor-header,
-.hud-monitor-footer,
-.hud-metric-card::before,
-.hud-metric-card::after,
-.hud-strategy-step:not(:last-child)::before {
-  border-color: #000000 !important;
+.showcase-tabs-wrapper {
+  display: flex !important;
+  justify-content: center !important;
+  margin-bottom: 2.5rem !important;
+  width: 100% !important;
 }
 
-/* Explicit text color overrides */
-.hud-dock-title,
-.monitor-tab,
-.hud-monitor-coordinates,
-.hud-display-lbl,
-.hud-display-val,
-.hud-terminal-log-header,
-.hud-terminal-log-content,
-.hud-strategy-lbl,
-.hud-strategy-val,
-.hud-strategy-text h4,
-.hud-strategy-text,
-.hud-strategy-title,
-.hud-terminal-id,
-.card-tech-header span,
-.hud-category-label,
-.hud-title-label,
-.tech-tag {
-  color: #000000 !important;
+.showcase-tabs {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center !important;
+  gap: 0.75rem !important;
+  max-width: 900px !important;
 }
 
-.hud-metric-lbl {
-  color: rgba(0, 0, 0, 0.6) !important;
-}
-.hud-metric-val {
-  color: #000000 !important;
-}
-
-/* Console buttons styling */
 .hud-dock-btn {
   background: #ffffff !important;
   border: 1.5px solid #000000 !important;
   color: #000000 !important;
-  border-radius: 50px !important; /* pill shape */
+  border-radius: 50px !important;
+  padding: 0.6rem 1.25rem !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.85rem !important;
+  font-weight: 700 !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all var(--transition-fast) !important;
+  text-decoration: none !important;
+  letter-spacing: 0px !important;
+  width: auto !important;
+  height: auto !important;
+}
+
+.hud-dock-btn::before {
+  display: none !important;
 }
 
 .hud-dock-btn:hover {
@@ -2732,19 +2592,24 @@ body.no-scroll {
 
 .hud-dock-btn.active {
   background: #000000 !important;
-  border-color: #000000 !important;
   color: #ffffff !important;
+  border-color: #000000 !important;
 }
 
-.hud-dock-btn::before {
-  background-color: #ffffff !important; /* white highlight in black btn */
+.hud-btn-name {
+  font-weight: 700 !important;
 }
 
 .hud-btn-status {
-  background-color: #f4f4f5 !important;
-  border: 1px solid #000000 !important;
-  color: #000000 !important;
+  font-size: 0.6rem !important;
+  font-weight: 800 !important;
+  padding: 0.15rem 0.45rem !important;
   border-radius: 50px !important;
+  border: 1px solid #000000 !important;
+  background: #f4f4f5 !important;
+  color: #000000 !important;
+  text-transform: uppercase !important;
+  transition: all var(--transition-fast) !important;
 }
 
 .hud-dock-btn.active .hud-btn-status,
@@ -2754,48 +2619,346 @@ body.no-scroll {
   color: #000000 !important;
 }
 
-/* Terminal Log */
-.hud-terminal-log-wrapper {
-  background: #ffffff !important;
+.showcase-content-grid {
+  display: grid !important;
+  grid-template-columns: 1.05fr 0.95fr !important;
+  gap: 2.5rem !important;
+  align-items: start !important;
+}
+
+.showcase-left-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+}
+
+.showcase-right-col {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.5rem !important;
+}
+
+.showcase-brand-card {
   border: 1.5px solid #000000 !important;
-  box-shadow: none !important;
-}
-.hud-terminal-log-wrapper::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.15) !important;
-}
-.hud-terminal-cursor {
-  background-color: #000000 !important;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2) !important;
+  background: #ffffff !important;
+  padding: 1.5rem !important;
+  border-radius: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.35rem !important;
 }
 
-/* Indicators */
-.pulse-green {
-  background-color: #000000 !important;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3) !important;
+.hud-category-label {
+  font-family: var(--font-sans) !important;
+  font-size: 0.7rem !important;
+  font-weight: 800 !important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
 }
 
-/* Console CTA override */
-.hud-monitor-footer .btn-primary {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
-.hud-monitor-footer .btn-primary:hover {
-  background-color: #222222 !important;
-}
-.hud-monitor-footer .btn-wa-direct {
-  border-color: #000000 !important;
+.hud-title-label {
+  font-family: var(--font-sans) !important;
+  font-size: 1.75rem !important;
+  font-weight: 800 !important;
   color: #000000 !important;
-}
-.hud-monitor-footer .btn-wa-direct:hover {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-  border-color: #000000 !important;
+  letter-spacing: -0.75px !important;
+  line-height: 1.2 !important;
 }
 
-/* Custom scrollbar override inside console */
-.hud-dock-buttons::-webkit-scrollbar-thumb {
-  background: rgba(0, 0, 0, 0.15) !important;
+.hud-metrics-panel {
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 1rem !important;
 }
+
+.hud-metric-card {
+  border: 1.5px solid #000000 !important;
+  background: #ffffff !important;
+  padding: 1rem 0.85rem !important;
+  border-radius: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.25rem !important;
+  box-shadow: none !important;
+  transition: all var(--transition-fast) !important;
+}
+
+.hud-metric-card:hover {
+  transform: translate(-3px, -3px) !important;
+  box-shadow: 3px 3px 0px #000000 !important;
+}
+
+.hud-metric-lbl {
+  font-family: var(--font-sans) !important;
+  font-size: 0.7rem !important;
+  font-weight: 800 !important;
+  color: rgba(0, 0, 0, 0.5) !important;
+  text-transform: uppercase !important;
+}
+
+.hud-metric-val {
+  font-family: var(--font-sans) !important;
+  font-size: 1.5rem !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  letter-spacing: -0.5px !important;
+}
+
+.hud-strategy-panel {
+  border: 1.5px solid #000000 !important;
+  background: #ffffff !important;
+  padding: 1.5rem !important;
+  border-radius: 16px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 0.5rem !important;
+}
+
+.hud-strategy-title {
+  font-family: var(--font-sans) !important;
+  font-size: 0.8rem !important;
+  font-weight: 800 !important;
+  color: #000000 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.hud-strategy-text {
+  font-family: var(--font-sans) !important;
+  font-size: 0.85rem !important;
+  color: rgba(0, 0, 0, 0.7) !important;
+  line-height: 1.5 !important;
+}
+
+.hud-action-buttons {
+  display: flex !important;
+  gap: 1rem !important;
+}
+
+.btn-pill-solid {
+  border: 1.5px solid #000000 !important;
+  background: #000000 !important;
+  color: #ffffff !important;
+  border-radius: 50px !important;
+  padding: 0.8rem 1.8rem !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all var(--transition-fast) !important;
+  cursor: pointer !important;
+  justify-content: center !important;
+}
+
+.btn-pill-solid:hover {
+  background: #222222 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+.btn-pill-outline {
+  border: 1.5px solid #000000 !important;
+  background: transparent !important;
+  color: #000000 !important;
+  border-radius: 50px !important;
+  padding: 0.8rem 1.8rem !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.9rem !important;
+  font-weight: 700 !important;
+  text-decoration: none !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+  transition: all var(--transition-fast) !important;
+  cursor: pointer !important;
+  justify-content: center !important;
+}
+
+.btn-pill-outline:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+  transform: translateY(-2px) !important;
+}
+
+.hud-screenshot-card {
+  border: 1.5px solid #000000 !important;
+  background: #ffffff !important;
+  border-radius: 16px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.hud-screenshot-card .card-tech-header {
+  background: #f4f4f5 !important;
+  border-bottom: 1.5px solid #000000 !important;
+  padding: 0.6rem 1rem !important;
+  display: flex !important;
+  align-items: center !important;
+  position: relative !important;
+}
+
+.hud-screenshot-card .card-tech-header::before {
+  content: "" !important;
+  display: block !important;
+  width: 7px !important;
+  height: 7px !important;
+  border-radius: 50% !important;
+  background: #ff5f56 !important;
+  box-shadow: 11px 0 0 #ffbd2e, 22px 0 0 #27c93f !important;
+  margin-right: 2.5rem !important;
+}
+
+.hud-screenshot-card .card-tech-header span {
+  margin: 0 auto !important;
+  background: #ffffff !important;
+  border: 1px solid #000000 !important;
+  border-radius: 4px !important;
+  padding: 0.15rem 1.5rem !important;
+  font-size: 0.65rem !important;
+  color: rgba(0, 0, 0, 0.6) !important;
+  font-family: monospace !important;
+  font-weight: 600 !important;
+  text-transform: lowercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+.hud-screenshot-wrapper {
+  height: 250px !important;
+  position: relative !important;
+  overflow: hidden !important;
+  background: #ffffff !important;
+}
+
+.hud-screenshot-wrapper img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: top center !important;
+  transition: transform 0.4s ease !important;
+}
+
+.hud-screenshot-wrapper:hover img {
+  transform: scale(1.04) !important;
+}
+
+.hud-chart-card {
+  border: 1.5px solid #000000 !important;
+  background: #ffffff !important;
+  padding: 1.5rem !important;
+  border-radius: 16px !important;
+}
+
+.hud-chart-card .card-tech-header {
+  font-family: monospace !important;
+  font-size: 0.65rem !important;
+  color: rgba(0, 0, 0, 0.4) !important;
+  margin-bottom: 0.75rem !important;
+  text-transform: uppercase !important;
+  font-weight: 700 !important;
+}
+
+.hud-chart-wrapper {
+  height: 200px !important;
+}
+
+/* ==========================================================================
+   RESPONSIVE OVERRIDES - CONSOLE COCKPIT
+   ========================================================================== */
+@media (max-width: 1024px) {
+  .showcase-content-grid {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase-tabs-wrapper {
+    overflow-x: auto !important;
+    scrollbar-width: none !important;
+    -webkit-overflow-scrolling: touch !important;
+    justify-content: flex-start !important;
+    padding-bottom: 0.5rem !important;
+  }
+  
+  .showcase-tabs-wrapper::-webkit-scrollbar {
+    display: none !important;
+  }
+  
+  .showcase-tabs {
+    flex-wrap: nowrap !important;
+    gap: 0.5rem !important;
+    justify-content: flex-start !important;
+  }
+  
+  .hud-dock-btn {
+    flex: 0 0 auto !important;
+    padding: 0.5rem 1rem !important;
+    font-size: 0.75rem !important;
+  }
+  
+  .hud-btn-status {
+    margin-left: 0.25rem !important;
+  }
+  
+  .hud-metrics-panel {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+  
+  .hud-metric-card {
+    padding: 0.6rem !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .hud-metric-lbl {
+    font-size: 0.55rem !important;
+  }
+  
+  .hud-metric-val {
+    font-size: 1.15rem !important;
+  }
+  
+  .hud-screenshot-wrapper {
+    height: 180px !important;
+  }
+  
+  .hud-chart-wrapper {
+    height: 180px !important;
+  }
+  
+  .hud-action-buttons {
+    flex-direction: row !important;
+    width: 100% !important;
+    justify-content: center !important;
+  }
+  
+  .hud-action-buttons a {
+    flex: 1 1 auto !important;
+    font-size: 0.75rem !important;
+    padding: 0.65rem 1.2rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .hud-action-buttons {
+    flex-direction: column !important;
+    width: 100% !important;
+    gap: 0.5rem !important;
+  }
+  
+  .hud-action-buttons a {
+    width: 100% !important;
+  }
+}
+/* ==========================================================================
+   MOCKUP REDESIGN (WEGROW AESTHETIC) - HERO SECTION & FINE LINES
+   ========================================================================== */
 /* ==========================================================================
    MOCKUP REDESIGN (WEGROW AESTHETIC) - HERO SECTION & FINE LINES
    ========================================================================== */
